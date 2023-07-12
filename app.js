@@ -6,11 +6,13 @@ class Ship {
         this.firepower = 5;
         this.accuracy = .7;
     }
-
+// Method for USS Assembly to attack the alien ship
     attack(target) {
-        
+
     }
 }
+
+
 let ship = new Ship("USSAssembly", 20, 5, .7);
 // console.log(ship)
 
@@ -34,7 +36,8 @@ class AlienShip {
         this.accuracy = (Math.floor(Math.random() * 3) + 6) / 10;
     }
 
-    returnFire () {
+// Method for the Alien ship to attack the Ship
+    attack(target) {
 
     }
 }
@@ -46,7 +49,9 @@ const alienship5 = new AlienShip("SpaceInvader5");
 const alienship6 = new AlienShip("SpaceInvader6");
 // console.log(alienship)
 
-
+// Simulate battle
+playerShip.attack(alienship);
+alienship.attack(playerShip);
 
 
 
@@ -57,15 +62,9 @@ const button2 = document.getElementById("retreat");
 button1.addEventListener('click', attack);
 button2.addEventListener('click', retreat);
 
-// Simulate a battle between the ship and a single alien ship
 
-// Make a method for the USS Assembly that will attack a given target.
-//  Target can be an input to a method
-// const attack = {
-//     attackTarget() {
-        
-//     }
-// }
+
+
 
 
 // Run the method and pass it throuh the alien ship
@@ -82,12 +81,7 @@ button2.addEventListener('click', retreat);
 // Make it so the alien will only be hit if a Math.random call is below the accuracy threshold.
 
 
-// Make a method for the alien ship to attack a target
-// const fight = {
-//     fightTarget() {
 
-//     }
-// }
 
 // Add a status console log for the end of the round
 
