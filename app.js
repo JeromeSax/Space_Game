@@ -38,7 +38,7 @@ class AlienShip {
 
 // Method for the Alien ship to attack the Ship
     attack(target) {
-
+        if()
     }
 }
 const alienship = new AlienShip("SpaceInvader");
@@ -50,8 +50,8 @@ const alienship6 = new AlienShip("SpaceInvader6");
 // console.log(alienship)
 
 // Simulate battle
-playerShip.attack(alienship);
-alienship.attack(playerShip);
+// playerShip.attack(alienship);
+// alienship.attack(playerShip);
 
 
 
