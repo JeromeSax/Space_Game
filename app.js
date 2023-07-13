@@ -8,7 +8,11 @@ class Ship {
     }
 // Method for USS Assembly to attack the alien ship
     attack(target) {
-
+        if (target.hull <= 2) {
+            console.log("You have landed a direct hit");
+        } else if (target.hull >= 6) {
+            console.log("You have missed your target");
+        }
     }
 }
 
@@ -38,7 +42,7 @@ class AlienShip {
 
 // Method for the Alien ship to attack the Ship
     attack(target) {
-        if()
+        
     }
 }
 const alienship = new AlienShip("SpaceInvader");
