@@ -42,7 +42,11 @@ class AlienShip {
 
 // Method for the Alien ship to attack the Ship
     attack(target) {
-        
+        if (target.hull < 20) {
+            console.log("You have taken damage!");
+        } else if (target.hull >= 20) {
+            console.log("No damage taken");
+        }
     }
 }
 const alienship = new AlienShip("SpaceInvader");
@@ -54,8 +58,8 @@ const alienship6 = new AlienShip("SpaceInvader6");
 // console.log(alienship)
 
 // Simulate battle
-// playerShip.attack(alienship);
-// alienship.attack(playerShip);
+playerShip.attack(AlienShip);
+alienship.attack(Ship);
 
 
 
