@@ -77,6 +77,10 @@ button2.addEventListener('click', retreat);
 
 // Run the method and pass it throuh the alien ship
 
+array.forEach(AlienShip => {
+    let (i = 0, )
+});
+
 // Make it so the method reduces the target's hull by the firepower of the USS Asembly.
 
 
