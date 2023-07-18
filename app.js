@@ -7,8 +7,8 @@ class Ship {
         this.accuracy = .7;
     }
 // Method for USS Assembly to attack the alien ship
-    attack(target) {
-        if (target.hull <= 2) {
+    attack(alienShip) {
+        if (alienShip.hull <= 2) {
             console.log("You have landed a direct hit");
         } else if (target.hull >= 6) {
             console.log("You have missed your target");
@@ -41,8 +41,8 @@ class AlienShip {
     }
 
 // Method for the Alien ship to attack the Ship
-    attack(target) {
-        if (target.hull < 20) {
+    attack(ship) {
+        if (ship.hull < 20) {
             console.log("You have taken damage!");
         } else if (target.hull >= 20) {
             console.log("No damage taken");
@@ -78,7 +78,7 @@ button2.addEventListener('click', retreat);
 // Run the method and pass it throuh the alien ship
 
 array.forEach(AlienShip => {
-    let (i = 0, )
+    let (i = 0, i <= 6, i++)
 });
 
 // Make it so the method reduces the target's hull by the firepower of the USS Asembly.
